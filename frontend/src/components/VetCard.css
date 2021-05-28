@@ -1,0 +1,13 @@
+.vet-card-container {
+  margin-top: 20px;
+}
+
+.vet-card {
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  height: 60vh;
+  width: 81vw;
+  overflow-x: hidden;
+  margin-top: 10px;
+}

@@ -18,7 +18,7 @@ const CardLocation = ({ location }) => {
     <div className="card-location-container">
       <div className="card-location-map">
         <GoogleMapReact
-          bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API }}
+          bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API }}
           defaultCenter={location}
           defaultZoom={18}
         >
