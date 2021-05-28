@@ -1,9 +1,11 @@
+import CardVetInfo from "./CardVetInfo";
+import CardLocation from "./CardLocation";
+
 function SwipeCard() {
   return (
     <div className="App">
-      {/* <Location/>
-      <VetInfo /> */}
-      Hello world
+      <CardLocation />
+      <CardVetInfo />
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.card-vet-info-container {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.cvi-vet-image {
+  height: 50px;
+  width: 50px;
+  background-color: gray;
+}
+
+.cvi-vet-info {
+  display: flex;
+  flex-direction: column;
+}
