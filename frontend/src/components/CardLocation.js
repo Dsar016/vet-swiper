@@ -11,7 +11,7 @@ const LocationPin = ({ text }) => (
 );
 
 const CardLocation = ({ location }) => {
-  console.log(location.location);
+  console.log(location);
 
   // update the location pin coordinates
   return (
@@ -19,10 +19,10 @@ const CardLocation = ({ location }) => {
       <div className="card-location-map">
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API }}
-          defaultCenter={location.location}
+          defaultCenter={location}
           defaultZoom={18}
         >
-          <LocationPin lat={location["lat"]} lng={location["lng"]} text={""} />
+          <LocationPin lat={location?.lat} lng={location?.lng} text={""} />
         </GoogleMapReact>
       </div>
     </div>
