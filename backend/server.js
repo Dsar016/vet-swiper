@@ -5,7 +5,7 @@ const app = express()
 const vetSchema = require('./models/vet.js')
 const profileSchema = require('./models/profile.js')
 
-const port = 3000
+const port = 2300
 
 app.use(express.json())
 
@@ -23,7 +23,7 @@ mongoose
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
-  .then((result) => {app.listen(3000); console.log('Server open on localhost:3000')})
+  .then((result) => {app.listen(port); console.log(`Server open on localhost:${port}`)})
   .catch((err) => console.log(err))
 const Vet = mongoose.model('vet', vetSchema)
 const Profile = mongoose.model('profile', profileSchema)
