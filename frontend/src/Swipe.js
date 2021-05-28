@@ -1,5 +1,6 @@
 import SwipeCard from "./components/SwipeCard";
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from "react";
+import "./Swipe.css"
 
 const returnMockApi = () => {
   return {
@@ -10,21 +11,21 @@ const returnMockApi = () => {
       lat: -36.9107212,
       lng: 174.7689044,
     },
-    image: "temp"
-  }
-}
+    image: "temp",
+  };
+};
 
 function Swipe() {
-
-  const [vetData, setVetData] = useState({})
+  const [vetData, setVetData] = useState({});
+  console.log(vetData);
 
   useEffect(() => {
-    setVetData(returnMockApi())
+    setVetData(returnMockApi());
   }, []);
 
   return (
-    <div className="App" data={vetData}>
-      <SwipeCard location={vetData["location"]}/>
+    <div className="swipe-container">
+      <SwipeCard location={vetData["location"]} data={vetData} />
     </div>
   );
 }
