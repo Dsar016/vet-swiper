@@ -39,15 +39,14 @@ app.get('/getvet', async (req, res) => {
   }
 })
 
-app.post('/getprofile', async (req, res) => {
-  const { lat, lng, rd } = req.body
+app.post('/getprofiles', async (req, res) => {
+  const { id } = req.body
 
-  console.log(req.body)
-  console.log(lat, lng, rd)
+  console.log(id)
 
   try{
     console.log("Got /getprofile request!")
-    let vet = await Profile.find()
+    let vet = await Profile.find({ works_at: "ChIJPbtydgVIDW0RoLGPPZg9-6w" })
     //console.log(vet)
     res.json(vet)
   } catch(e) {
