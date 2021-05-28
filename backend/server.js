@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 })
 
 // database connection
-const dbURI = 'mongodb://localhost:27017/ezyvet'
+const dbURI = 'mongodb+srv://user:user@vetswiper.adugw.mongodb.net/ezyvet?retryWrites=true&w=majority'
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,
