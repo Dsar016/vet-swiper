@@ -5,7 +5,7 @@ ezySwiper is a tinder-style web app designed to help pet-lovers find the ideal p
  - View customer ratings for each practice's price and customer-satisfaction. 
  - View personal history of vet practices you have approved of. 
  
-# Application Architecture 
+# Application Architecture:
 
 ## Back-end:
  - Veterinary practice and surgeon profiles are stored in objects on the in the cloud on a *mongoDB* server.   
