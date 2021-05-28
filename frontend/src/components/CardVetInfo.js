@@ -1,6 +1,6 @@
 import "./CardVetInfo.css";
 
-function CardVetInfo() {
+function CardVetInfo({data}) {
   return (
     <div className="App">
       <div className="card-vet-info-container">

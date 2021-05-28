@@ -1,8 +1,9 @@
 import Swipe from './Swipe';
+import "./App.css"
 
 function App() {
   return (
-    <div>
+    <div className="main-container">
       <Swipe />
     </div>
   );

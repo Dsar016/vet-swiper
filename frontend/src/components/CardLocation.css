@@ -1,0 +1,10 @@
+.card-location-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-location-map {
+  width: 300px;
+  height: 300px;
+}

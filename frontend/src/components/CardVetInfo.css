@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: row;
   height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cvi-vet-info-name {
+  
 }
 
 .cvi-vet-image {
